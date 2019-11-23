@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EA4F2F41-8EA4-40D9-BEE3-C54135338289}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="softweb-common\softwebCommon.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="softweb-api\softwebApi.dproj">
+            <Dependencies>softweb-common\softwebCommon.dproj;softweb-service\softwebService.dproj</Dependencies>
+        </Projects>
+        <Projects Include="softweb-persistence\softwebPersistence.dproj">
+            <Dependencies>softweb-common\softwebCommon.dproj</Dependencies>
+        </Projects>
+        <Projects Include="softweb-service\softwebService.dproj">
+            <Dependencies>softweb-common\softwebCommon.dproj;softweb-persistence\softwebPersistence.dproj</Dependencies>
+        </Projects>
+        <Projects Include="softweb-service-test\__history\softwebServiceTest.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="softwebCommon">
+        <MSBuild Projects="softweb-common\softwebCommon.dproj"/>
+    </Target>
+    <Target Name="softwebCommon:Clean">
+        <MSBuild Projects="softweb-common\softwebCommon.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="softwebCommon:Make">
+        <MSBuild Projects="softweb-common\softwebCommon.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="softwebApi" DependsOnTargets="softwebCommon;softwebService">
+        <MSBuild Projects="softweb-api\softwebApi.dproj"/>
+    </Target>
+    <Target Name="softwebApi:Clean" DependsOnTargets="softwebCommon:Clean;softwebService:Clean">
+        <MSBuild Projects="softweb-api\softwebApi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="softwebApi:Make" DependsOnTargets="softwebCommon:Make;softwebService:Make">
+        <MSBuild Projects="softweb-api\softwebApi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="softwebPersistence" DependsOnTargets="softwebCommon">
+        <MSBuild Projects="softweb-persistence\softwebPersistence.dproj"/>
+    </Target>
+    <Target Name="softwebPersistence:Clean" DependsOnTargets="softwebCommon:Clean">
+        <MSBuild Projects="softweb-persistence\softwebPersistence.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="softwebPersistence:Make" DependsOnTargets="softwebCommon:Make">
+        <MSBuild Projects="softweb-persistence\softwebPersistence.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="softwebService" DependsOnTargets="softwebCommon;softwebPersistence">
+        <MSBuild Projects="softweb-service\softwebService.dproj"/>
+    </Target>
+    <Target Name="softwebService:Clean" DependsOnTargets="softwebCommon:Clean;softwebPersistence:Clean">
+        <MSBuild Projects="softweb-service\softwebService.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="softwebService:Make" DependsOnTargets="softwebCommon:Make;softwebPersistence:Make">
+        <MSBuild Projects="softweb-service\softwebService.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="softwebServiceTest">
+        <MSBuild Projects="softweb-service-test\__history\softwebServiceTest.dproj"/>
+    </Target>
+    <Target Name="softwebServiceTest:Clean">
+        <MSBuild Projects="softweb-service-test\__history\softwebServiceTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="softwebServiceTest:Make">
+        <MSBuild Projects="softweb-service-test\__history\softwebServiceTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="softwebCommon;softwebApi;softwebPersistence;softwebService;softwebServiceTest"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="softwebCommon:Clean;softwebApi:Clean;softwebPersistence:Clean;softwebService:Clean;softwebServiceTest:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="softwebCommon:Make;softwebApi:Make;softwebPersistence:Make;softwebService:Make;softwebServiceTest:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

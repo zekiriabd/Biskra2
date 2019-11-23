@@ -1,0 +1,151 @@
+unit UserController;
+
+// EMS Resource Module
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  System.JSON,
+  System.Generics.Collections,
+
+  EMS.Services,
+  EMS.ResourceAPI,
+  EMS.ResourceTypes,
+
+  Aurelius.Engine.ObjectManager,
+
+  rest.json;
+
+
+type
+  [ResourceName('api')]
+  {$METHODINFO ON}
+  TUserControllerResource = class
+  published
+
+    [ResourceSuffix('/user/GetUsers')]
+    procedure GetUsers(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+
+    [ResourceSuffix('/user/PostUser')]
+    procedure PostUser(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+
+    [ResourceSuffix('/user/GetUserById/{id}')]
+    procedure GetUserById(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+
+
+    [ResourceSuffix('/user/DelUserById/{id}')]
+    procedure DelUserByID(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+
+    [ResourceSuffix('/user/UpdateUser')]
+    procedure UpdateUser(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+
+
+
+    private
+       Manager : TObjectManager;
+
+    public
+
+
+
+  end;
+  {$METHODINFO OFF}
+
+implementation
+uses User,UserDataAccessTMS;
+
+procedure TUserControllerResource.GetUsers(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  users : TList<TUser>;
+begin
+ try
+  Manager := TUserDataAccessTMS.GetTmsManager();
+  users := Manager.Find<TUser>().List();
+  AResponse.Body.SetValue( TJSON.ObjectToJsonObject(users), True);
+ finally
+   Manager.Free;
+ end;
+
+end;
+
+procedure TUserControllerResource.GetUserById(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  id:string;
+  user:TUser;
+begin
+ try
+   Manager := TUserDataAccessTMS.GetTmsManager();
+   id  := ARequest.Params.Values['id'];
+   user := Manager.Find<TUser>(StrToInt(id));
+   AResponse.Body.SetValue( TJSON.ObjectToJsonObject(user), True);
+ finally
+   Manager.Free;
+ end;
+
+end;
+
+procedure TUserControllerResource.PostUser(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  jsUser : TJSONObject;
+  user : TUser;
+begin
+ try
+   jsUser := ARequest.Body.GetObject;
+   user := TUser.Create();
+   user.FirstName :=jsUser.GetValue('firstName').Value;
+   user.LastName := jsUser.GetValue('lastName').Value;
+
+   Manager := TUserDataAccessTMS.GetTmsManager();
+
+   Manager.Save(user);
+
+ finally
+   Manager.Free;
+ end;
+end;
+
+procedure TUserControllerResource.DelUserByID(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  id:string;
+  user:TUser;
+begin
+ try
+   Manager := TUserDataAccessTMS.GetTmsManager();
+   id  := ARequest.Params.Values['id'];
+   user := Manager.Find<TUser>(StrToInt(id));
+   Manager.Remove(user);
+ finally
+   Manager.Free;
+ end;
+
+end;
+
+procedure TUserControllerResource.UpdateUser(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  jsUser : TJSONObject;
+  user : TUser;
+begin
+ try
+   Manager := TUserDataAccessTMS.GetTmsManager();
+   jsUser := ARequest.Body.GetObject;
+   user := TUser.Create(StrToInt(jsUser.GetValue('id').Value),jsUser.GetValue('firstName').Value,jsUser.GetValue('lastName').Value);
+   Manager.Update(user);
+ finally
+   Manager.Free;
+ end;
+end;
+
+
+procedure Register;
+begin
+  RegisterResource(TypeInfo(TUserControllerResource));
+end;
+
+
+initialization
+  Register;
+end.
+
+

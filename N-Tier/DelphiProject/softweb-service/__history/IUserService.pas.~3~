@@ -1,0 +1,13 @@
+unit IUserService;
+
+interface
+uses User;
+type
+
+   TIUserService = Interface(IInterface)
+      function GetUsers(): TList<TUser>;
+   end;
+
+implementation
+
+end.

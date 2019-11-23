@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "softweb-api"
+		},
+		{
+			"path": "softweb-common"
+		},
+		{
+			"path": "softweb-service"
+		},
+		{
+			"path": "softweb-persistence"
+		}
+	],
+	"settings": {}
+}

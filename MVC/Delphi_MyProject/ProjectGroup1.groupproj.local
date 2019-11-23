@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2019/10/16 21:23:31.019,D:\MyDev\Biskra\MVC\Delphi_MyProject\ProjectGroup1.groupproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2019/10/16 21:23:42.540,D:\MyDev\Biskra\MVC\Delphi_MyProject\DelphiMVC.groupproj=D:\MyDev\Biskra\MVC\Delphi_MyProject\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2019/10/16 21:23:42.540,D:\MyDev\Biskra\MVC\Delphi_MyProject\ProjectGroup1.groupproj=D:\MyDev\Biskra\MVC\Delphi_MyProject\DelphiMVC.groupproj</Transaction>
+    <Transaction>2019/10/16 21:23:52.331,D:\MyDev\Biskra\MVC\Delphi_MyProject\ProjectGroup1.groupproj=D:\MyDev\Biskra\MVC\Delphi_MyProject\DelphiMVC
+DelphiMVCProject.groupproj</Transaction>
+    <Transaction>2019/10/16 21:23:52.331,D:\MyDev\Biskra\MVC\Delphi_MyProject\DelphiMVC
+DelphiMVCProject.groupproj=D:\MyDev\Biskra\MVC\Delphi_MyProject\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2019/10/16 21:23:57.032,D:\MyDev\Biskra\MVC\Delphi_MyProject\ProjectGroup1.groupproj=D:\MyDev\Biskra\MVC\Delphi_MyProject\DelphiMVC
+DelphiMVCProject
+.groupproj</Transaction>
+    <Transaction>2019/10/16 21:23:57.032,D:\MyDev\Biskra\MVC\Delphi_MyProject\DelphiMVC
+DelphiMVCProject
+.groupproj=D:\MyDev\Biskra\MVC\Delphi_MyProject\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+  <Default.Personality>
+    <Projects ActiveProject="D:\MyDev\Biskra\MVC\Delphi_MyProject\MyProject.dproj"/>
+  </Default.Personality>
+</BorlandProject>

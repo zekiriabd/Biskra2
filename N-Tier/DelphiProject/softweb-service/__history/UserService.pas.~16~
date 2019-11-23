@@ -1,0 +1,20 @@
+unit UserService;
+
+interface
+
+uses UserDto, System.Generics.Collections;
+
+type
+
+
+
+   IUserService =  interface(IInterface)
+   ['{0D57624C-CDDE-458B-A36C-436AE465B477}']
+
+      function GetUsers(): TList<TUserDto>;
+
+   end;
+
+implementation
+
+end.

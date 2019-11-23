@@ -1,0 +1,61 @@
+unit UserServiceImpl;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  System.Generics.Collections,
+  UserDto,
+  User,
+  UserDao,
+
+  UserService;
+
+type
+  {$METHODINFO ON}
+  TUserServiceImpl = class (TInterfacedObject, IUserService)
+  published
+    private
+    public
+    function multipl(x:Integer ; y:Integer):Integer;
+    function GetUsers: TList<TUserDto>;
+    Constructor Create();overload;
+    Constructor Create(TUserDto mockContext);overload;
+  end;
+  {$METHODINFO OFF}
+
+implementation
+
+Constructor TUserServiceImpl.Create();overload;
+begin
+ userDao := TUerDao.Create();
+end;
+
+Constructor TUserServiceImpl.Create(TUserDto mockContext);overload;
+begin
+   userDao = mockContext;
+end;
+
+function TUserServiceImpl.multipl(x:Integer ; y:Integer):Integer;
+begin
+  Result := x * y;
+end;
+
+function TUserServiceImpl.GetUsers: TList<TUserDto>;
+var
+    users : TList<TUser>;
+    user  :TUser;
+begin
+    Result:= TList<TUserDto>.Create();
+try
+    users := userDao.Users;
+    for user in users do Result.add(TUserDto.Create(user.id,user.firstName,user.lastName));
+ finally
+    users.Free;
+ end;
+end;
+
+end.
+
+

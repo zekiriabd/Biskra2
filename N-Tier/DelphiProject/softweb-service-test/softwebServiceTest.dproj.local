@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/10/05 18:29:25.000.724,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/11/20 20:45:21.000.552,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/11/20 20:48:08.000.870,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/11/21 22:04:35.000.387,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/11/21 22:05:02.000.427,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebServiceTest.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2019/11/21 22:05:21.000.246,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\UserServiceTest.pas=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/11/21 22:06:02.000.665,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-service-test\UserServiceTest.pas=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\UserServiceTest.pas</Transaction>
+    <Transaction>2019/11/21 22:06:04.000.953,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-service-test\softwebServiceTest.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebServiceTest.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

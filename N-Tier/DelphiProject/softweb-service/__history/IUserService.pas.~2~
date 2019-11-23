@@ -1,0 +1,12 @@
+unit IUserService;
+
+interface
+type
+
+   TIUserService = Interface(IInterface)
+      procedure GetUsers();
+   end;
+
+implementation
+
+end.

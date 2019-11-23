@@ -1,0 +1,57 @@
+unit UserServiceImpl;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+
+  EMS.Services,
+  EMS.ResourceAPI,
+  EMS.ResourceTypes,
+
+  Aurelius.Engine.ObjectManager,
+  System.Generics.Collections,
+
+  UserDto,
+  UserDao,
+  AureliusManager,
+  UserService;
+
+type
+  {$METHODINFO ON}
+  TUserServiceImpl = class//(IUserService)
+  published
+
+
+    private
+       Manager : TObjectManager;
+    public
+    function GetUsers: TList<TUserDto>;
+    Constructor Create();
+  end;
+  {$METHODINFO OFF}
+
+implementation
+Constructor TUserServiceImpl.Create(); begin end;
+
+function TUserServiceImpl.GetUsers: TList<TUserDto>;
+var
+    users : TList<TUserDao>;
+    user  :TUserDao;
+begin
+   try
+    Result:= TList<TUserDto>.Create();
+    Manager := TAureliusManager.GetTmsManager();
+    users := Manager.Find<TUserDao>().List();
+    for user in users do
+         Result.add(TUserDao.Create(user.id,user.firstName,user.lastName));
+
+ finally
+    Manager.Free;
+ end;
+end;
+
+end.
+
+

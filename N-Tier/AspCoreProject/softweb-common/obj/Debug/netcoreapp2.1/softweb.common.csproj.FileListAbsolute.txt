@@ -1,0 +1,16 @@
+D:\MyDev\Biskra\AspCoreProject\softweb-common\bin\Debug\netcoreapp2.1\softweb.common.deps.json
+D:\MyDev\Biskra\AspCoreProject\softweb-common\bin\Debug\netcoreapp2.1\softweb.common.dll
+D:\MyDev\Biskra\AspCoreProject\softweb-common\bin\Debug\netcoreapp2.1\softweb.common.pdb
+D:\MyDev\Biskra\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.csproj.CoreCompileInputs.cache
+D:\MyDev\Biskra\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.AssemblyInfoInputs.cache
+D:\MyDev\Biskra\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.AssemblyInfo.cs
+D:\MyDev\Biskra\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.dll
+D:\MyDev\Biskra\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.pdb
+D:\MyDev\Biskra\N-Tier\AspCoreProject\softweb-common\bin\Debug\netcoreapp2.1\softweb.common.deps.json
+D:\MyDev\Biskra\N-Tier\AspCoreProject\softweb-common\bin\Debug\netcoreapp2.1\softweb.common.dll
+D:\MyDev\Biskra\N-Tier\AspCoreProject\softweb-common\bin\Debug\netcoreapp2.1\softweb.common.pdb
+D:\MyDev\Biskra\N-Tier\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.AssemblyInfoInputs.cache
+D:\MyDev\Biskra\N-Tier\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.AssemblyInfo.cs
+D:\MyDev\Biskra\N-Tier\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.dll
+D:\MyDev\Biskra\N-Tier\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.pdb
+D:\MyDev\Biskra\N-Tier\AspCoreProject\softweb-common\obj\Debug\netcoreapp2.1\softweb.common.csprojAssemblyReference.cache
