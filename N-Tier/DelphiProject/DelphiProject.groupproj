@@ -15,7 +15,7 @@
         <Projects Include="softweb-service\softwebService.dproj">
             <Dependencies>softweb-common\softwebCommon.dproj;softweb-persistence\softwebPersistence.dproj</Dependencies>
         </Projects>
-        <Projects Include="softweb-service-test\__history\softwebServiceTest.dproj">
+        <Projects Include="softweb-service-test\softwebServiceTest.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -63,13 +63,13 @@
         <MSBuild Projects="softweb-service\softwebService.dproj" Targets="Make"/>
     </Target>
     <Target Name="softwebServiceTest">
-        <MSBuild Projects="softweb-service-test\__history\softwebServiceTest.dproj"/>
+        <MSBuild Projects="softweb-service-test\softwebServiceTest.dproj"/>
     </Target>
     <Target Name="softwebServiceTest:Clean">
-        <MSBuild Projects="softweb-service-test\__history\softwebServiceTest.dproj" Targets="Clean"/>
+        <MSBuild Projects="softweb-service-test\softwebServiceTest.dproj" Targets="Clean"/>
     </Target>
     <Target Name="softwebServiceTest:Make">
-        <MSBuild Projects="softweb-service-test\__history\softwebServiceTest.dproj" Targets="Make"/>
+        <MSBuild Projects="softweb-service-test\softwebServiceTest.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
         <CallTarget Targets="softwebCommon;softwebApi;softwebPersistence;softwebService;softwebServiceTest"/>

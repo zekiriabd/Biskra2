@@ -2,30 +2,30 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/10/14 23:04:13.000.827,=rtl.dcp</Transaction>
-    <Transaction>2019/10/14 23:04:41.000.061,D:\MyDev\Biskra\DelphiProject\softweb-persistence\softwebPersistence.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
-    <Transaction>2019/10/14 23:07:46.000.913,=D:\MyDev\Biskra\DelphiProject\softweb-persistence\Database\MySqlCoonection.pas</Transaction>
+    <Transaction>2019/10/14 23:04:41.000.061,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Package1.dproj=D:\MyDev\Biskra\DelphiProject\softweb-persistence\softwebPersistence.dproj</Transaction>
     <Transaction>2019/10/14 23:07:46.000.913,=D:\MyDev\Biskra\DelphiProject\softweb-persistence\Database\UserDataAccessTMS.pas</Transaction>
     <Transaction>2019/10/14 23:07:46.000.913,=D:\MyDev\Biskra\DelphiProject\softweb-persistence\Database\UserDataAccess.pas</Transaction>
+    <Transaction>2019/10/14 23:07:46.000.913,=D:\MyDev\Biskra\DelphiProject\softweb-persistence\Database\MySqlCoonection.pas</Transaction>
     <Transaction>2019/10/20 20:07:58.000.342,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\Database\MySqlCoonection.pas=</Transaction>
     <Transaction>2019/10/20 20:08:05.000.080,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\Database\UserDataAccess.pas=</Transaction>
     <Transaction>2019/10/20 20:09:29.000.199,=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDataAccess.pas</Transaction>
-    <Transaction>2019/10/20 20:10:04.000.863,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDataAccess.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas</Transaction>
-    <Transaction>2019/10/20 20:12:05.000.323,=FireDAC.dcp</Transaction>
-    <Transaction>2019/10/20 20:12:05.000.339,=FireDACCommon.dcp</Transaction>
-    <Transaction>2019/10/20 20:12:05.000.307,=dbrtl.dcp</Transaction>
+    <Transaction>2019/10/20 20:10:04.000.863,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDataAccess.pas</Transaction>
     <Transaction>2019/10/20 20:12:05.000.323,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2019/10/20 20:12:05.000.370,=tmsbcl.dcp</Transaction>
+    <Transaction>2019/10/20 20:12:05.000.307,=dbrtl.dcp</Transaction>
+    <Transaction>2019/10/20 20:12:05.000.339,=FireDACCommon.dcp</Transaction>
+    <Transaction>2019/10/20 20:12:05.000.323,=FireDAC.dcp</Transaction>
     <Transaction>2019/10/20 20:12:05.000.370,=aurelius.dcp</Transaction>
     <Transaction>2019/10/20 20:12:05.000.354,=FireDACMySQLDriver.dcp</Transaction>
-    <Transaction>2019/10/20 20:12:05.000.370,=tmsbcl.dcp</Transaction>
     <Transaction>2019/10/22 21:56:24.000.406,=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\User.pas</Transaction>
-    <Transaction>2019/10/22 21:57:35.000.190,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\ManagerORM.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas</Transaction>
-    <Transaction>2019/10/22 21:57:54.000.033,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\AureliusManager.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\ManagerORM.pas</Transaction>
-    <Transaction>2019/10/22 21:58:33.000.789,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\User.pas</Transaction>
-    <Transaction>2019/11/23 18:01:53.467,=fmxFireDAC.dcp</Transaction>
-    <Transaction>2019/11/23 18:01:53.467,=fmx.dcp</Transaction>
-    <Transaction>2019/11/23 19:14:15.135,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\User.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas</Transaction>
-    <Transaction>2019/11/23 19:25:20.017,=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\Unit1.pas</Transaction>
-    <Transaction>2019/11/23 19:25:47.850,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\Unit1.pas</Transaction>
+    <Transaction>2019/10/22 21:57:35.000.190,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\ManagerORM.pas</Transaction>
+    <Transaction>2019/10/22 21:57:54.000.033,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\ManagerORM.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\AureliusManager.pas</Transaction>
+    <Transaction>2019/10/22 21:58:33.000.789,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\User.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas</Transaction>
+    <Transaction>2019/11/23 18:01:53.000.467,=fmx.dcp</Transaction>
+    <Transaction>2019/11/23 18:01:53.000.467,=fmxFireDAC.dcp</Transaction>
+    <Transaction>2019/11/23 19:14:15.000.135,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\User.pas</Transaction>
+    <Transaction>2019/11/23 19:25:20.000.017,=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\Unit1.pas</Transaction>
+    <Transaction>2019/11/23 19:25:47.000.850,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\Unit1.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-persistence\UserDao.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="AureliusManager.pas"/>

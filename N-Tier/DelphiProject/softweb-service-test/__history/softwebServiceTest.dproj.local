@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/11/23 10:07:20.000.396,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
-    <Transaction>2019/11/23 10:07:35.000.246,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebServiceTest.dproj</Transaction>
-    <Transaction>2019/11/23 10:08:22.000.294,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-service-test\__history\UserServiceTest.pas</Transaction>
-    <Transaction>2019/11/23 10:08:24.000.343,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebServiceTest.dproj=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-service-test\__history\softwebServiceTest.dproj</Transaction>
+    <Transaction>2019/11/23 10:07:35.000.246,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebServiceTest.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2019/11/23 10:08:22.000.294,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-service-test\__history\UserServiceTest.pas=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/11/23 10:08:24.000.343,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-service-test\__history\softwebServiceTest.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebServiceTest.dproj</Transaction>
   </Transactions>
 </BorlandProject>
