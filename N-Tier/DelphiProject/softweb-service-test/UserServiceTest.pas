@@ -10,7 +10,8 @@ uses
   User,
   UserService,
   FireDAC.ConsoleUI.Wait,
-  FireDAC.Comp.UI,
+  FireDAC.Comp.UI
+  ,
   Delphi.Mocks;
 
 type
@@ -34,7 +35,7 @@ type
 
   private
     FDGUIxWaitCursor : TFDGUIxWaitCursor;
-    userService : TUserServiceImpl;
+
   end;
 
 implementation
@@ -43,7 +44,7 @@ constructor TUserServiceTest.Create;
 begin
   FDGUIxWaitCursor := TFDGUIxWaitCursor.Create(nil);
   FDGUIxWaitCursor.Provider := 'Console';
-  userService := TUserServiceImpl.Create();
+
 end;
 
 destructor TUserServiceTest.Destroy;
@@ -53,36 +54,46 @@ begin
 end;
 
 procedure TUserServiceTest.GetUsersMockTest;
+var
+mockContext : TMock<IUserDao>;
+data : TList<TUser>;
+_result : TList<TUserDto>;
+userService : TUserServiceImpl;
 begin
-  try
-    var data := TList<TUser>.Create();
+
+    data := TList<TUser>.Create();
     data.Add(Tuser.Create(1,'Zekiri','Abdelali'));
 
-    var mockContext := TMock<IUserDao>.Create();
+    mockContext := TMock<IUserDao>.Create();
     mockContext.Setup.WillReturn(data).When.Users;
 
     userService := TUserServiceImpl.Create(mockContext.Instance);
 
-    var _result := userService.GetUsers();
+    _result := userService.GetUsers();
 
     Assert.IsTrue(_result.Count = 1);
     Assert.IsTrue(_result.First.FirstName = 'Zekiri');
 
-  finally
-    FDGUIxWaitCursor.Free;
-  end;
+
 end;
 
 procedure TUserServiceTest.GetUsersTest;
+var _result : TList<TUserDto>;
+ userService : TUserServiceImpl;
 begin
-    var _result := userService.GetUsers();
+    userService := TUserServiceImpl.Create();
+    _result := userService.GetUsers();
     Assert.IsTrue(_result.Count = 6);
 end;
 
 procedure TUserServiceTest.multipleTest(const AValue1 : Integer;const AValue2 : Integer);
+var
+_result : Integer;
+ userService : TUserServiceImpl;
 begin
-  var _result := userService.multipl(AValue1,AValue2);
-  Assert.IsTrue(_result = 16);
+   userService := TUserServiceImpl.Create();
+   _result := userService.multipl(AValue1,AValue2);
+   Assert.IsTrue(_result = 16);
 end;
 
 initialization

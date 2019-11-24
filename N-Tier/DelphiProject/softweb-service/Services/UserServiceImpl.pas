@@ -17,12 +17,12 @@ type
   TUserServiceImpl = class (TInterfacedObject, IUserService)
   published
     private
-    userDao : TUserDao;
+    userDao : IUserDao;
     public
     function multipl(x:Integer ; y:Integer):Integer;
     function GetUsers: TList<TUserDto>;
     Constructor Create();overload;
-    Constructor Create(mockContext:TUserDao);overload;
+    Constructor Create(mockContext:IUserDao);overload;
   end;
   {$METHODINFO OFF}
 
@@ -33,7 +33,7 @@ begin
  userDao := TUserDao.Create();
 end;
 
-Constructor TUserServiceImpl.Create(mockContext:TUserDao);
+Constructor TUserServiceImpl.Create(mockContext:IUserDao);
 begin
    userDao := mockContext;
 end;
