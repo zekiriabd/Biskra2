@@ -3,9 +3,8 @@
 - Create server Api Localhost:8080/Controller/Action/Param 
   ========================================== */
 
-var express     = require('express');
-
-import userController from './src/Controllers/UserController';
+let express = require('express');
+import userController from './Controllers/UserController';
 
 const app  = express();
 const IP   = '127.0.0.1';

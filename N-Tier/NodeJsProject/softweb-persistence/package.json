@@ -18,6 +18,6 @@
       "typeorm": "^0.2.18"
    },
    "scripts": {
-      "start": "ts-node src/UserDao.ts"
+      "start": "ts-node index.ts"
    }
 }

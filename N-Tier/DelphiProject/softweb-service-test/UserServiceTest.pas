@@ -55,10 +55,10 @@ end;
 
 procedure TUserServiceTest.GetUsersMockTest;
 var
-mockContext : TMock<IUserDao>;
-data : TList<TUser>;
-_result : TList<TUserDto>;
-userService : TUserServiceImpl;
+  mockContext : TMock<IUserDao>;
+  data : TList<TUser>;
+  _result : TList<TUserDto>;
+  userService : TUserServiceImpl;
 begin
 
     data := TList<TUser>.Create();
