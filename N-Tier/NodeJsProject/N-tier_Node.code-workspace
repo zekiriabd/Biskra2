@@ -1,13 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "softweb-api"
+			"path": "softweb-service"
 		},
 		{
 			"path": "softweb-common"
 		},
 		{
-			"path": "softweb-service"
+			"path": "softweb-api"
 		},
 		{
 			"path": "softweb-persistence"

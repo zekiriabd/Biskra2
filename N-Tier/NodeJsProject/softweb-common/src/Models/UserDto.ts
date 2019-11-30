@@ -1,5 +1,5 @@
 
-export class UserDto {
+export default class UserDto {
     Id: number;
     FirstName: string;
     LastName: string;

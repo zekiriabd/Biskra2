@@ -3,13 +3,13 @@
 	<Transactions>
     <Transaction>2019/10/06 15:44:21.000.791,=rtl.dcp</Transaction>
     <Transaction>2019/10/14 22:57:38.000.232,=rtl.dcp</Transaction>
-    <Transaction>2019/10/14 22:58:03.000.438,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softweb.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
-    <Transaction>2019/10/14 22:58:22.000.206,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebCommon.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softweb.dproj</Transaction>
-    <Transaction>2019/10/14 22:59:27.000.840,D:\MyDev\Biskra\DelphiProject\softweb-common\softwebCommon.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebCommon.dproj</Transaction>
+    <Transaction>2019/10/14 22:58:03.000.438,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softweb.dproj</Transaction>
+    <Transaction>2019/10/14 22:58:22.000.206,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softweb.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebCommon.dproj</Transaction>
+    <Transaction>2019/10/14 22:59:27.000.840,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\softwebCommon.dproj=D:\MyDev\Biskra\DelphiProject\softweb-common\softwebCommon.dproj</Transaction>
     <Transaction>2019/10/14 23:01:15.000.847,=D:\MyDev\Biskra\DelphiProject\softweb-common\Models\User.pas</Transaction>
-    <Transaction>2019/10/16 22:04:39.000.556,=dbrtl.dcp</Transaction>
     <Transaction>2019/10/16 22:04:39.000.556,=tmsbcl.dcp</Transaction>
+    <Transaction>2019/10/16 22:04:39.000.556,=dbrtl.dcp</Transaction>
     <Transaction>2019/10/16 22:04:39.000.571,=aurelius.dcp</Transaction>
-    <Transaction>2019/10/22 21:59:54.000.772,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-common\Models\UserDto.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-common\Models\User.pas</Transaction>
+    <Transaction>2019/10/22 21:59:54.000.772,D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-common\Models\User.pas=D:\MyDev\Biskra\N-Tier\DelphiProject\softweb-common\Models\UserDto.pas</Transaction>
   </Transactions>
 </BorlandProject>

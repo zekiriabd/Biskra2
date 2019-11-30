@@ -1,3 +1,3 @@
-import {UserDao} from "./orm/UserDao";
+import UserDao from "./src/UserDao";
 let userDao = new UserDao();
 console.log(userDao.Users());
